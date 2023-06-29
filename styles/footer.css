@@ -1,0 +1,5 @@
+/*footeer*/
+.footer {
+    height: var(--size-height);
+    display: none;
+}

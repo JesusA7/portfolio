@@ -1,0 +1,33 @@
+/*Sección Menu*/
+.menu {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  margin: 0px;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.menu__nav {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  gap: 1rem;
+}
+.menu__list__item {
+  display: inline;
+}
+@media screen and (max-width: 768px) {
+  .menu__nav {
+    display: none;
+  }
+}

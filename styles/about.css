@@ -1,0 +1,16 @@
+ /*Sección About*/
+  
+ .about {
+    height: var(--size-height);
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__container {
+    max-width: 751px;
+  }
+  .about__svg{
+    height: 500px;
+    width: 500px;
+  }
