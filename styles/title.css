@@ -1,13 +1,13 @@
 /*Sección Title*/
 .title {
   height: var(--size-height);
-  /* display: flex; */
+  max-width: var(--max-width);
 }
 .title__div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row-reverse wrap;
+  flex-flow: row-reverse;
   gap: 1em;
   height: 100%;
 }
@@ -16,12 +16,9 @@
   gap: 2em;
 }
 .title__profile {
-  /* height: 20%;
-  width: 20%; */
-  min-width: 60vh;
-  min-height: 60vh;
+  min-width: 28vw;
+  min-height: 28vw;
   border-radius: 30%;
-  /* background-color:#1a73e8; */
 }
 .title__container {
   max-width: 751px;

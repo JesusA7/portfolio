@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/logo-JA-removebg-preview.png" >
+    <link rel="shortcut icon" href="assets/logo-JA-removebg-preview.png" />
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/experience.css" />
     <link rel="stylesheet" href="styles/formcontacto.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-
+    <link rel="stylesheet" href="styles/button/button.css" />
     <title>Mi Portafolio</title>
   </head>
   <body>
@@ -38,8 +38,8 @@
               width="30"
               height="30"
             />
-            </a
-          ><h3 class="menu__title">Jesús Amable</h3>
+          </a>
+          <h3 class="menu__title">Jesús Amable</h3>
         </header>
         <nav class="menu__nav">
           <ul class="menu__list">
@@ -60,8 +60,8 @@
           <img class="title__profile" src="assets/Jesus-recortado.png" />
           <div class="title__container">
             <h2 class="title__bio">
-              Soy Economista y <br>
-              Desarrollador Front End
+              Soy<br />
+              Economista y Desarrollador Front End
             </h2>
             <h3 class="title__subsection">
               Actualmente soy parte del programa Oracle ONE.
@@ -97,13 +97,13 @@
       <section class="about" id="sobre-mi">
         <div class="about__container">
           <h3 class="about__title">Sobre mi</h3>
-          <pre class="about__paragraph">
+          <p class="about__paragraph">
             Soy bachiller en Economía de la Universidad Nacional de Trujillo,
-            actualmente estoy cursando una Maestría en el posgrado de mi Universidad
-            me encanta las finanzas como también la macroeconomía. Además, estoy
-            laborando en el Organismo Supervisor de Inversiones en Infraestructuras
-            de Uso Público.
-          </pre>
+            actualmente estoy cursando una Maestría en el posgrado de mi
+            Universidad me encanta las finanzas como también la macroeconomía.
+            Además, estoy laborando en el Organismo Supervisor de Inversiones en
+            Infraestructuras de Uso Público.
+          </p>
           <p class="about__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque velit velit, volutpat semper dignissim dictum,
@@ -284,11 +284,17 @@
 
       <!-- Sección de Experiencia Profesional/Proyectos-->
       <section class="experience" id="xp">
-        <h2 class="experience__section__title">Experiencia Profesional</h2>
+        <!-- <div class="experience__container__title">
+          <h2 class="experience__section__title">Experiencia Profesional</h2>
+        </div> -->
         <div class="experience__box">
           <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-          <img class="experience__img" src="assets\decod_print.png" />
-          <div class="experience__info">
+          <img
+            class="experience__img"
+            src="assets\decod_print.png"
+            data-transition="right"
+          />
+          <div class="experience__info" data-transition="left">
             <h2 class="experience__title">Encriptador de texto</h2>
             <h3 class="experience__text">Challenge Alura Codificador</h3>
             <div class="experience__description">
@@ -296,15 +302,11 @@
               <span class="experience__repo"
                 ><a
                   href="https://github.com/alura-challenges/challenge-one-encriptador-latam"
-                  ><button class="experiencia__botao--repo">
-                    Repositório
-                  </button></a
+                  ><button class="button">Repositório</button></a
                 ></span
               >
               <span class="experience__demo"
-                ><a href=""
-                  ><button class="experience__botao--demo">Ver demo</button></a
-                ></span
+                ><a href=""><button class="button">Ver demo</button></a></span
               >
             </div>
           </div>
@@ -312,26 +314,19 @@
 
         <div class="experience__box">
           <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-          <img class="experience__img" src="assets\forca_print.png" />
-          <div class="experience__info">
+          <img
+            class="experience__img"
+            src="assets\forca_print.png"
+            data-transition="left"
+          />
+          <div class="experience__info" data-transition="right">
             <h2 class="experience__title">
               Juego creado con HTML y JavaScript
             </h2>
             <h3 class="experience__text">Challenge Oracle</h3>
             <div class="experience__description">
-              <!-- Pon el enlace del proyecto en Github o GithubPages -->
-              <span class="experience__repo"
-                ><a
-                  href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"
-                  ><button class="experiencia__botao--repo">
-                    Repositório
-                  </button></a
-                ></span
-              >
               <span class="experience__demo"
-                ><a href=""
-                  ><button class="experience__botao--demo">Ver demo</button></a
-                ></span
+                ><a href=""><button class="button">Ver demo</button></a></span
               >
             </div>
           </div>
@@ -339,50 +334,45 @@
 
         <div class="experience__box">
           <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-          <img class="experience__img" src="assets\secretcode_print.png" />
-          <div class="experience__info-container">
+          <img
+            class="experience__img"
+            src="assets\secretcode_print.png"
+            data-transition="right"
+          />
+          <div class="experience__info" data-transition="left">
             <h2 class="experience__title">Encriptador de texto</h2>
             <h3 class="experience__text">Challenge Oracle</h3>
             <div class="experience__description">
-              <!-- Pon el enlace del proyecto en Github o GithubPages -->
-              <span class="experience__repo"
-                ><a
-                  href="https://github.com/alura-challenges/challenge-one-encriptador-latam"
-                  ><button class="experiencia__botao--repo">
-                    Repositório
-                  </button></a
-                ></span
-              >
               <span class="experience__demo"
-                ><a href=""
-                  ><button class="experience__botao--demo">Ver demo</button></a
-                ></span
+                ><a href=""><button class="button">Ver demo</button></a></span
               >
             </div>
           </div>
         </div>
 
         <div class="experience__box">
-          <img class="experience__img" src="assets\forca2_print.png" />
-          <div class="experience__info-container">
+          <img
+            class="experience__img"
+            src="assets\forca2_print.png"
+            data-transition="left"
+          />
+          <div class="experience__info" data-transition="right">
             <h2 class="experience__title">
               Juego creado con HTML, CSS y JavaScript
             </h2>
             <h3 class="experience__text">Challenge Oracle</h3>
             <div class="experience__description">
               <!-- Pon el enlace del proyecto en Github o GithubPages -->
-              <span class="experience__repo"
+              <!-- <span class="experience__repo"
                 ><a
                   href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"
                   ><button class="experiencia__botao--repo">
                     Repositório
                   </button></a
                 ></span
-              >
+              > -->
               <span class="experience__demo"
-                ><a href=""
-                  ><button class="experience__botao--demo">Ver demo</button></a
-                ></span
+                ><a href=""><button class="button">Ver demo</button></a></span
               >
             </div>
           </div>
@@ -397,60 +387,64 @@
               src="assets/letter_message_send_woman_mail_icon.svg"
             />
           </div>
-          <div class="formcontacto__text">
-            <h2 class="formcontacto__title">Contacto</h2>
-            <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
-            <h3 class="formcontacto__subtext">
-              Complete el siguiente formulario y me pondré en contacto con usted
-              lo antes posible.
-            </h3>
-            <form class="formcontacto__form" name="form">
-              <div class="formcontacto__nameemail">
+          <div class="formcontacto--derecha">
+            <div class="formcontacto__text">
+              <h2 class="formcontacto__title">Contacto</h2>
+              <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
+              <h3 class="formcontacto__subtext">
+                Complete el siguiente formulario y me pondré en contacto con
+                usted lo antes posible.
+              </h3>
+              <form class="formcontacto__form" name="form">
+                <div class="formcontacto__nameemail">
+                  <div class="formcontacto__container">
+                    <input
+                      class="formcontacto__input"
+                      type="text"
+                      name="nombre"
+                      placeholder=" "
+                    /><label class="formcontacto__label" for="nombre"
+                      >Nombre</label
+                    >
+                  </div>
+                  <div class="formcontacto__container">
+                    <input
+                      class="formcontacto__input"
+                      type="email"
+                      name="email"
+                      placeholder=" "
+                    /><label class="formcontacto__label" for="email"
+                      >E-mail</label
+                    >
+                  </div>
+                </div>
                 <div class="formcontacto__container">
                   <input
                     class="formcontacto__input"
                     type="text"
-                    name="nombre"
+                    name="asunto"
                     placeholder=" "
-                  /><label class="formcontacto__label" for="nombre"
-                    >Nombre</label
+                  /><label class="formcontacto__label" for="asunto"
+                    >Asunto</label
                   >
                 </div>
                 <div class="formcontacto__container">
-                  <input
-                    class="formcontacto__input"
-                    type="email"
-                    name="email"
+                  <textarea
+                    class="formcontacto__textarea"
+                    rows="3"
+                    id="mensagem"
+                    name="mensaje"
                     placeholder=" "
-                  /><label class="formcontacto__label" for="email"
-                    >E-mail</label
+                  ></textarea
+                  ><label class="formcontacto__label" for="mensaje"
+                    >Mensaje</label
                   >
                 </div>
-              </div>
-              <div class="formcontacto__container">
-                <input
-                  class="formcontacto__input"
-                  type="text"
-                  name="asunto"
-                  placeholder=" "
-                /><label class="formcontacto__label" for="asunto">Asunto</label>
-              </div>
-              <div class="formcontacto__container">
-                <textarea
-                  class="formcontacto__textarea"
-                  rows="3"
-                  id="mensagem"
-                  name="mensaje"
-                  placeholder=" "
-                ></textarea
-                ><label class="formcontacto__label" for="mensaje"
-                  >Mensaje</label
-                >
-              </div>
-              <div class="formcontacto__containerboton">
-                <button class="formcontacto__boton">Enviar mensaje</button>
-              </div>
-            </form>
+                <div class="formcontacto__containerboton">
+                  <button class="button">Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -464,6 +458,7 @@
       </section>
     </main>
     <!-- Script del documento JavaScript -->
+    <script src="observer.js"></script>
     <script src="validacion.js"></script>
   </body>
 </html>

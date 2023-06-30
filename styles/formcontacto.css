@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 8rem;
+  padding: 2rem 4rem;
 }
 .formcontacto__contacto {
   height: 100%;
@@ -16,15 +16,22 @@
 }
 .formcontacto--esquerda {
   display: flex;
-  flex: 1;
+  width: 50%;
+}
+.formcontacto--derecha{
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 .formcontacto__img {
-  object-fit: cover;
+  width: 100%;
+  /* object-fit:fill; */
 }
 .formcontacto__text {
   flex: 1;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
 }
 .formcontacto__title {
   margin-bottom: 1rem;
@@ -33,17 +40,16 @@
   font-weight: 300;
 }
 .formcontacto__form {
-  flex: auto;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  gap: .5rem;
+  /* height: 100%; */
+  gap: 0.5rem;
 }
-.formcontacto__nameemail{
+.formcontacto__nameemail {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 .formcontacto__container {
   position: relative;
@@ -89,7 +95,6 @@
   transform: translate(0, -50%);
   transition: 0.2s ease;
 }
-
 .formcontacto__input:not(:placeholder-shown) + .formcontacto__label,
 .formcontacto__input:focus + .formcontacto__label,
 .formcontacto__textarea:not(:placeholder-shown) + .formcontacto__label,
@@ -98,38 +103,12 @@
   color: #1a73e8;
   font-size: 0.8rem;
 }
-/* .formcontacto__containerboton{
-  position: relative;
-} */
-.formcontacto__boton {
-  text-align: center;
-  padding: 1rem;
-  background: none;
-  color: #1a73e8;
-  font-size: 1.2rem;
-  border: 2px solid #1a73e8;
-  cursor: pointer;
-  transition: color 0.4s linear;
-  position: relative;
-  z-index: 10;
-}
-.formcontacto__boton:hover{
-  color: #fff;
-}
-.formcontacto__boton::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:#1a73e8;
-  transition: transform .5s;
-  transform-origin: 0 0 ;
-  z-index: -1;
-  transform: scaleX(0);
-}
-.formcontacto__boton:hover::before{
-  transform: scaleX(1);
 
+@media  screen and (max-width:768px) {
+  .formcontacto--derecha{
+    width:100%;
+  }
+  .formcontacto--esquerda{
+    display: none;
+  }
 }
