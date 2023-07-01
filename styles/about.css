@@ -1,12 +1,10 @@
  /*Sección About*/
   
  .about {
-    height: var(--size-height);
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: var(--max-width);
+    background-color: var(--background-color-2);
   }
   .about__container {
     max-width: 751px;

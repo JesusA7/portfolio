@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.flex__space__between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

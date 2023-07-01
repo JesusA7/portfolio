@@ -24,35 +24,40 @@
     <link rel="stylesheet" href="styles/formcontacto.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/button/button.css" />
+    <link rel="stylesheet" href="styles/container.css" />
     <title>Mi Portafolio</title>
   </head>
   <body>
     <!-- Sección del Menú  -->
     <main class="tudo">
       <section class="menu">
-        <header class="menu__header">
-          <a href="#title">
-            <img
-              src="assets/logo-JA-removebg-preview.png"
-              alt="estrellas"
-              width="30"
-              height="30"
-            />
-          </a>
-          <h3 class="menu__title">Jesús Amable</h3>
-        </header>
-        <nav class="menu__nav">
-          <ul class="menu__list">
-            <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-            <li class="menu__list__item"><a href="#skills">Skills</a></li>
-            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-            <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-            <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-            <li class="menu__list__item">
-              <a href="#contacto">Contacto@fulana.com</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container flex__space__between">
+          <header class="menu__header">
+            <a href="#title">
+              <img
+                src="assets/logo-JA-removebg-preview.png"
+                alt="estrellas"
+                width="30"
+                height="30"
+              />
+            </a>
+            <h3 class="menu__title">Jesús Amable</h3>
+          </header>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+              <li class="menu__list__item"><a href="#skills">Skills</a></li>
+              <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+              <li class="menu__list__item">
+                <a href="#formacion">Formación</a>
+              </li>
+              <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+              <li class="menu__list__item">
+                <a href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </section>
       <!-- Sección del Header/Title/Hero -->
       <section class="title" id="title">
@@ -95,26 +100,28 @@
 
       <!-- Sección sobre mi -->
       <section class="about" id="sobre-mi">
-        <div class="about__container">
-          <h3 class="about__title">Sobre mi</h3>
-          <p class="about__paragraph">
-            Soy bachiller en Economía de la Universidad Nacional de Trujillo,
-            actualmente estoy cursando una Maestría en el posgrado de mi
-            Universidad me encanta las finanzas como también la macroeconomía.
-            Además, estoy laborando en el Organismo Supervisor de Inversiones en
-            Infraestructuras de Uso Público.
-          </p>
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque velit velit, volutpat semper dignissim dictum,
-            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
-            potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis
-            venenatis, egestas metus vitae, aliquet metus.
-          </p>
-          <!-- Si quieres, pon tú firma acá! -->
-          <img src="assets\signature.png" />
+        <div class="container flex__center">
+          <div class="about__container">
+            <h3 class="about__title">Sobre mi</h3>
+            <p class="about__paragraph">
+              Soy bachiller en Economía de la Universidad Nacional de Trujillo,
+              actualmente estoy cursando una Maestría en el posgrado de mi
+              Universidad me encanta las finanzas como también la macroeconomía.
+              Además, estoy laborando en el Organismo Supervisor de Inversiones
+              en Infraestructuras de Uso Público.
+            </p>
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque velit velit, volutpat semper dignissim dictum,
+              imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+              Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean
+              sit amet felis venenatis, egestas metus vitae, aliquet metus.
+            </p>
+            <!-- Si quieres, pon tú firma acá! -->
+            <img src="assets\signature.png" />
+          </div>
+          <div class="about__svg"></div>
         </div>
-        <div class="about__svg"></div>
       </section>
 
       <!-- Sección de Skills -->
@@ -284,9 +291,6 @@
 
       <!-- Sección de Experiencia Profesional/Proyectos-->
       <section class="experience" id="xp">
-        <!-- <div class="experience__container__title">
-          <h2 class="experience__section__title">Experiencia Profesional</h2>
-        </div> -->
         <div class="experience__box">
           <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
           <img
@@ -314,11 +318,9 @@
 
         <div class="experience__box">
           <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-          <img
-            class="experience__img"
-            src="assets\forca_print.png"
-            data-transition="left"
-          />
+
+          <img class="experience__img" src="assets\forca_print.png"
+          data-transition=F"left" />
           <div class="experience__info" data-transition="right">
             <h2 class="experience__title">
               Juego creado con HTML y JavaScript
@@ -362,15 +364,6 @@
             </h2>
             <h3 class="experience__text">Challenge Oracle</h3>
             <div class="experience__description">
-              <!-- Pon el enlace del proyecto en Github o GithubPages -->
-              <!-- <span class="experience__repo"
-                ><a
-                  href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"
-                  ><button class="experiencia__botao--repo">
-                    Repositório
-                  </button></a
-                ></span
-              > -->
               <span class="experience__demo"
                 ><a href=""><button class="button">Ver demo</button></a></span
               >
@@ -380,70 +373,72 @@
       </section>
       <!-- Sección de Contacto -->
       <section class="formcontacto" id="contacto">
-        <div class="formcontacto__contacto">
-          <div class="formcontacto--esquerda">
-            <img
-              class="formcontacto__img"
-              src="assets/letter_message_send_woman_mail_icon.svg"
-            />
-          </div>
-          <div class="formcontacto--derecha">
-            <div class="formcontacto__text">
-              <h2 class="formcontacto__title">Contacto</h2>
-              <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
-              <h3 class="formcontacto__subtext">
-                Complete el siguiente formulario y me pondré en contacto con
-                usted lo antes posible.
-              </h3>
-              <form class="formcontacto__form" name="form">
-                <div class="formcontacto__nameemail">
+        <div class="container">
+          <div class="formcontacto__contacto">
+            <div class="formcontacto--esquerda">
+              <img
+                class="formcontacto__img"
+                src="assets/letter_message_send_woman_mail_icon.svg"
+              />
+            </div>
+            <div class="formcontacto--derecha">
+              <div class="formcontacto__text">
+                <h2 class="formcontacto__title">Contacto</h2>
+                <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
+                <h3 class="formcontacto__subtext">
+                  Complete el siguiente formulario y me pondré en contacto con
+                  usted lo antes posible.
+                </h3>
+                <form class="formcontacto__form" name="form">
+                  <div class="formcontacto__nameemail">
+                    <div class="formcontacto__container">
+                      <input
+                        class="formcontacto__input"
+                        type="text"
+                        name="nombre"
+                        placeholder=" "
+                      /><label class="formcontacto__label" for="nombre"
+                        >Nombre</label
+                      >
+                    </div>
+                    <div class="formcontacto__container">
+                      <input
+                        class="formcontacto__input"
+                        type="email"
+                        name="email"
+                        placeholder=" "
+                      /><label class="formcontacto__label" for="email"
+                        >E-mail</label
+                      >
+                    </div>
+                  </div>
                   <div class="formcontacto__container">
                     <input
                       class="formcontacto__input"
                       type="text"
-                      name="nombre"
+                      name="asunto"
                       placeholder=" "
-                    /><label class="formcontacto__label" for="nombre"
-                      >Nombre</label
+                    /><label class="formcontacto__label" for="asunto"
+                      >Asunto</label
                     >
                   </div>
                   <div class="formcontacto__container">
-                    <input
-                      class="formcontacto__input"
-                      type="email"
-                      name="email"
+                    <textarea
+                      class="formcontacto__textarea"
+                      rows="3"
+                      id="mensagem"
+                      name="mensaje"
                       placeholder=" "
-                    /><label class="formcontacto__label" for="email"
-                      >E-mail</label
+                    ></textarea
+                    ><label class="formcontacto__label" for="mensaje"
+                      >Mensaje</label
                     >
                   </div>
-                </div>
-                <div class="formcontacto__container">
-                  <input
-                    class="formcontacto__input"
-                    type="text"
-                    name="asunto"
-                    placeholder=" "
-                  /><label class="formcontacto__label" for="asunto"
-                    >Asunto</label
-                  >
-                </div>
-                <div class="formcontacto__container">
-                  <textarea
-                    class="formcontacto__textarea"
-                    rows="3"
-                    id="mensagem"
-                    name="mensaje"
-                    placeholder=" "
-                  ></textarea
-                  ><label class="formcontacto__label" for="mensaje"
-                    >Mensaje</label
-                  >
-                </div>
-                <div class="formcontacto__containerboton">
-                  <button class="button">Enviar mensaje</button>
-                </div>
-              </form>
+                  <div class="formcontacto__containerboton">
+                    <button class="button">Enviar mensaje</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -452,8 +447,8 @@
       <!-- Sección de Footer -->
       <section class="footer">
         <div class="footer__rodape">
-          <p>Desarrollado por Fulana de Tal</p>
-          <p>2022</p>
+          <p>&copy Desarrollado por Jesús Amable</p>
+          <p>2023</p>
         </div>
       </section>
     </main>

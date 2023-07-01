@@ -3,12 +3,10 @@
   position: sticky;
   top: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 60px;
-  background-color: #fff;
-  /* backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
+  background-color: var(--background-color-1);
   margin: 0px;
 }
 .menu__header {

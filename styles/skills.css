@@ -1,11 +1,11 @@
 /* Seccion Skills */
 
 .skills {
-  height: var(--size-height);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color-1);
 }
 .skills__title {
   text-align: center;
@@ -13,11 +13,11 @@
 }
 .skills__line {
   width: 100%;
-  max-width: 700px;
+  max-width: 1200px;
   display: grid;
   gap: 1em;
-  grid-auto-rows: 174px;
-  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+  grid-auto-rows: 144px;
+  grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
 }
 
 .skills__box {
@@ -25,4 +25,21 @@
   display: flex;
   align-items: end;
   padding: 1em;
+  border-radius: var(--border-radius);
+}
+
+.skills__box:hover {
+  outline: 1px solid #1a73e8;
+  transition: all 0.5s;
+  transform: translateY(-10%);
+}
+
+/* Tablet */
+@media screen and (max-width:768px){
+
+}
+
+/* Movil */
+@media screen and (max-width:361px) {
+  
 }

@@ -1,5 +1,13 @@
 /*footeer*/
 .footer {
-    height: var(--size-height);
-    display: none;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer__rodape p{
+    margin-top: .5rem;
 }

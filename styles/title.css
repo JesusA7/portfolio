@@ -2,6 +2,7 @@
 .title {
   height: var(--size-height);
   max-width: var(--max-width);
+  background-color: var(--background-color-1);
 }
 .title__div {
   display: flex;
@@ -25,19 +26,39 @@
 }
 .title__bio {
   font-style: normal;
-  font-weight:bolder;
-  font-size: 6vw;
-  line-height: 6vw;
+  font-weight:700;
+  font-size: calc(3rem + 2vw);
+  line-height: calc(3rem + 2vw);
   color: #000;
   margin: 3rem 3rem 2rem 0;
 }
 .title__subsection {
   color: #000;
-  font-size: 1.5vw;
+  font-size: calc(.7rem + .5vw);
   font-weight: 400;
 }
 .title__network{
   margin: 2rem 0;
-  font-size: 1.2vw;
+  font-size: calc(.7rem + .5vw);
   font-weight: bold;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  .title{
+    height: auto;
+  }
+  .title__bio {
+    font-style: normal;
+    font-weight:700;
+    font-size: 2rem;
+    line-height: normal;
+    color: #000;
+    margin: 3rem 3rem 2rem 0;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+
 }
