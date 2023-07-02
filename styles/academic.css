@@ -20,8 +20,14 @@
 .academic__courses__item__img {
   background-color: #fff;
   padding: 3em;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  place-content: center;
 }
-
+.academic__courses__item__img img{
+  width: 100%;
+}
 @media screen and (max-width:768px){
  
 }

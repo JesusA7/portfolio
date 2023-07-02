@@ -15,6 +15,9 @@
 .title__network {
   display: flex;
   gap: 2em;
+  margin: 2rem 0;
+  font-size: calc(.7rem + .5vw);
+  font-weight: bold;
 }
 .title__profile {
   min-width: 28vw;
@@ -37,11 +40,6 @@
   font-size: calc(.7rem + .5vw);
   font-weight: 400;
 }
-.title__network{
-  margin: 2rem 0;
-  font-size: calc(.7rem + .5vw);
-  font-weight: bold;
-}
 
 /*Tablet*/
 @media screen and (max-width: 768px) {
@@ -56,8 +54,30 @@
     color: #000;
     margin: 3rem 3rem 2rem 0;
   }
+  .title__network{
+    justify-content: center;
+  }
 }
-
+@media screen and (max-width: 630px) {
+  .title__div{
+    flex-wrap: wrap;
+  }
+  .title__profile{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: scale-down;
+  }
+  .title__container{
+    text-align: center;
+  }
+  .title__bio{
+    margin: 2rem 0;
+  }
+  .title__network{
+    gap: .8rem;
+  }
+}
 /*Mobile*/
 @media screen and (max-width: 425px) {
 

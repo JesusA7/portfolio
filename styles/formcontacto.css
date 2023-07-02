@@ -111,3 +111,9 @@
     display: none;
   }
 }
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  .formcontacto__nameemail{
+    flex-wrap: wrap;
+  }
+}
